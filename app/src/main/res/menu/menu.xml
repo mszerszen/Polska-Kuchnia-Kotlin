@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/HomeFragment"
+        android:icon="@drawable/home"
+        android:title="Strona Główna"
+        />
+    <item
+        android:id="@+id/OrdersFragment"
+        android:icon="@drawable/meals"
+        android:title="Moje Zamówienia"
+        />
+
+</menu>
