@@ -24,9 +24,92 @@ class Data {
                 description = "Sam kisiłem ogóra",
                 type = ItemType.SOUP,
                 price = 16.73,
-                image = R.drawable.pomidorowa
+                image = R.drawable.ogorkowa
             ),
-            
+            Item(
+                name = "Żurek",
+                description = "Tydzień fermentował w szafce",
+                type = ItemType.SOUP,
+                price = 16.73,
+                image = R.drawable.zurek
+            ),
+            Item(
+                name = "Grochowa",
+                description = "Aż łyżka staje(i nie tylko)",
+                type = ItemType.SOUP,
+                price = 16.73,
+                image = R.drawable.grochowka
+            ),
+            Item(
+                name = "Krokiety",
+                description = "Mały a cieszy",
+                type = ItemType.MEAL,
+                price = 16.73,
+                image = R.drawable.krokiety
+            ),
+            Item(
+                name = "Spaghetti",
+                description = "Włochy z ciasta",
+                type = ItemType.MEAL,
+                price = 16.73,
+                image = R.drawable.spaghetti
+            ),
+            Item(
+                name = "Żeberka",
+                description = "Mięso same odchodzi",
+                type = ItemType.MEAL,
+                price = 16.73,
+                image = R.drawable.zeberka
+            ),
+            Item(
+                name = "Panierowane filety śledziowe",
+                description = "Schabowy wikingów",
+                type = ItemType.MEAL,
+                price = 16.73,
+                image = R.drawable.sledz
+            ),
+            Item(
+                name = "Pierogi",
+                description = "Każdy lubi najpierw wylizać pieroga",
+                type = ItemType.MEAL,
+                price = 16.73,
+                image = R.drawable.pierog
+            ),
+            Item(
+                name = "Gołąbki",
+                description = "Uważaj bo odfruną",
+                type = ItemType.MEAL,
+                price = 16.73,
+                image = R.drawable.golobki
+            ),
+            Item(
+                name = "Kluski śląskie",
+                description = "Nie chodzi o dziołchy",
+                type = ItemType.MEAL,
+                price = 16.73,
+                image = R.drawable.kluski
+            ),
+            Item(
+                name = "Woda",
+                description = "Ognista",
+                type = ItemType.DRINK,
+                price = 16.73,
+                image = R.drawable.woda
+            ),
+            Item(
+                name = "Cola",
+                description = "E-Coli",
+                type = ItemType.DRINK,
+                price = 16.73,
+                image = R.drawable.cola
+            ),
+            Item(
+                name = "Mleko",
+                description = "Prosto z cysia",
+                type = ItemType.DRINK,
+                price = 16.73,
+                image = R.drawable.mleko
+            ),
         )
     }
 }

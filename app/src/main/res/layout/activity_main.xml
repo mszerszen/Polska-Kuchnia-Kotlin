@@ -14,12 +14,11 @@
     <androidx.fragment.app.FragmentContainerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="30dp"
         android:id="@+id/nav_host_fragment_container"
         android:name="androidx.navigation.fragment.NavHostFragment"
         app:defaultNavHost="true"
         app:navGraph="@navigation/nav_graph"
-        android:background="#123123"
+        android:background="#eaddac"
         />
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
