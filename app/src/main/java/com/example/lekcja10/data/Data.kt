@@ -62,7 +62,7 @@ class Data {
                 image = R.drawable.zeberka
             ),
             Item(
-                name = "Panierowane filety śledziowe",
+                name = "Panierowane Filety Śledziowe",
                 description = "Schabowy wikingów",
                 type = ItemType.MEAL,
                 price = 16.73,
@@ -83,7 +83,7 @@ class Data {
                 image = R.drawable.golobki
             ),
             Item(
-                name = "Kluski śląskie",
+                name = "Kluski Śląskie",
                 description = "Nie chodzi o dziołchy",
                 type = ItemType.MEAL,
                 price = 16.73,
@@ -109,6 +109,34 @@ class Data {
                 type = ItemType.DRINK,
                 price = 16.73,
                 image = R.drawable.mleko
+            ),
+            Item(
+                name = "Mielony",
+                description = "Lepiony stopami",
+                type = ItemType.MEAL,
+                price = 16.73,
+                image = R.drawable.mielony
+            ),
+            Item(
+                name = "Bigos",
+                description = "Grzyby podejrzane, a kapuste kisił jeszcze Jan Soplica",
+                type = ItemType.MEAL,
+                price = 16.73,
+                image = R.drawable.bigos
+            ),
+            Item(
+                name = "Pieczeń Rzymska",
+                description = "Legionista ze stosu",
+                type = ItemType.MEAL,
+                price = 16.73,
+                image = R.drawable.pieczen
+            ),
+            Item(
+                name = "Kopytka",
+                description = "Ktoś nie był tak głodny, żeby zjeść konia z kopytami",
+                type = ItemType.MEAL,
+                price = 16.73,
+                image = R.drawable.kopytka
             ),
         )
     }
