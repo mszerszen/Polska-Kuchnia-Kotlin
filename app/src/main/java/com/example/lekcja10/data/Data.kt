@@ -4,134 +4,134 @@ import com.example.lekcja10.R
 
 class Data {
     companion object {
-        val Data = listOf<Item>(
-            Item(
+        val Data = listOf<MenuItem>(
+            MenuItem(
                 name = "Pomidorowa",
                 description = "Z rosołu z wczoraj",
                 type = ItemType.SOUP,
                 price = 15.0,
                 image = R.drawable.pomidorowa
             ),
-            Item(
+            MenuItem(
                 name = "Rosół",
                 description = "Z wczoraj",
                 type = ItemType.SOUP,
                 price = 12.30,
                 image = R.drawable.rosol
             ),
-            Item(
+            MenuItem(
                 name = "Ogórkowa",
                 description = "Sam kisiłem ogóra",
                 type = ItemType.SOUP,
                 price = 16.73,
                 image = R.drawable.ogorkowa
             ),
-            Item(
+            MenuItem(
                 name = "Żurek",
                 description = "Tydzień fermentował w szafce",
                 type = ItemType.SOUP,
                 price = 16.73,
                 image = R.drawable.zurek
             ),
-            Item(
+            MenuItem(
                 name = "Grochowa",
                 description = "Aż łyżka staje(i nie tylko)",
                 type = ItemType.SOUP,
                 price = 16.73,
                 image = R.drawable.grochowka
             ),
-            Item(
+            MenuItem(
                 name = "Krokiety",
                 description = "Mały a cieszy",
                 type = ItemType.MEAL,
                 price = 16.73,
                 image = R.drawable.krokiety
             ),
-            Item(
+            MenuItem(
                 name = "Spaghetti",
                 description = "Włochy z ciasta",
                 type = ItemType.MEAL,
                 price = 16.73,
                 image = R.drawable.spaghetti
             ),
-            Item(
+            MenuItem(
                 name = "Żeberka",
                 description = "Mięso same odchodzi",
                 type = ItemType.MEAL,
                 price = 16.73,
                 image = R.drawable.zeberka
             ),
-            Item(
+            MenuItem(
                 name = "Panierowane Filety Śledziowe",
                 description = "Schabowy wikingów",
                 type = ItemType.MEAL,
                 price = 16.73,
                 image = R.drawable.sledz
             ),
-            Item(
+            MenuItem(
                 name = "Pierogi",
                 description = "Każdy lubi najpierw wylizać pieroga",
                 type = ItemType.MEAL,
                 price = 16.73,
                 image = R.drawable.pierog
             ),
-            Item(
+            MenuItem(
                 name = "Gołąbki",
                 description = "Uważaj bo odfruną",
                 type = ItemType.MEAL,
                 price = 16.73,
                 image = R.drawable.golobki
             ),
-            Item(
+            MenuItem(
                 name = "Kluski Śląskie",
                 description = "Nie chodzi o dziołchy",
                 type = ItemType.MEAL,
                 price = 16.73,
                 image = R.drawable.kluski
             ),
-            Item(
+            MenuItem(
                 name = "Woda",
                 description = "Ognista",
                 type = ItemType.DRINK,
                 price = 16.73,
                 image = R.drawable.woda
             ),
-            Item(
+            MenuItem(
                 name = "Cola",
                 description = "E-Coli",
                 type = ItemType.DRINK,
                 price = 16.73,
                 image = R.drawable.cola
             ),
-            Item(
+            MenuItem(
                 name = "Mleko",
                 description = "Prosto z cysia",
                 type = ItemType.DRINK,
                 price = 16.73,
                 image = R.drawable.mleko
             ),
-            Item(
+            MenuItem(
                 name = "Mielony",
                 description = "Lepiony stopami",
                 type = ItemType.MEAL,
                 price = 16.73,
                 image = R.drawable.mielony
             ),
-            Item(
+            MenuItem(
                 name = "Bigos",
                 description = "Grzyby podejrzane, a kapuste kisił jeszcze Jan Soplica",
                 type = ItemType.MEAL,
                 price = 16.73,
                 image = R.drawable.bigos
             ),
-            Item(
+            MenuItem(
                 name = "Pieczeń Rzymska",
                 description = "Legionista ze stosu",
                 type = ItemType.MEAL,
                 price = 16.73,
                 image = R.drawable.pieczen
             ),
-            Item(
+            MenuItem(
                 name = "Kopytka",
                 description = "Ktoś nie był tak głodny, żeby zjeść konia z kopytami",
                 type = ItemType.MEAL,
