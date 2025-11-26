@@ -1,10 +1,10 @@
 package com.example.lekcja10.data
 
 data class Meal(
-    val name: String,
-    val soup: Meal?,
-    val second: Meal?,
-    val drink: Meal?
+    var name: String,
+    var soup: MenuItem?,
+    var second: MenuItem?,
+    var drink: MenuItem?
 )
 
 data class MenuItem(

@@ -22,6 +22,7 @@
         android:layout_height="wrap_content"
         android:text="Nowe Zamówienie"
         android:backgroundTint="#943c23"
+        android:id="@+id/BTN_New"
         />
 
 </LinearLayout>

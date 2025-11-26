@@ -12,8 +12,8 @@
         android:label="fragment_new_order"
         tools:layout="@layout/fragment_new_order" >
         <action
-            android:id="@+id/action_HomeFragment_to_OrdersFragment"
-            app:destination="@id/OrdersFragment" />
+            android:id="@+id/action_HomeFragment_to_mealListFragment"
+            app:destination="@id/mealListFragment" />
     </fragment>
     <fragment
         android:id="@+id/OrdersFragment"
@@ -24,16 +24,37 @@
         android:id="@+id/customMealFragment"
         android:name="com.example.lekcja10.CustomMealFragment"
         android:label="fragment_custom_meal"
-        tools:layout="@layout/fragment_custom_meal" />
+        tools:layout="@layout/fragment_custom_meal" >
+        <action
+            android:id="@+id/action_customMealFragment_to_mealListFragment"
+            app:destination="@id/mealListFragment" />
+        <action
+            android:id="@+id/action_customMealFragment_to_orderSummaryFragment"
+            app:destination="@id/orderSummaryFragment" />
+    </fragment>
     <fragment
         android:id="@+id/mealListFragment"
         android:name="com.example.lekcja10.MealListFragment"
         android:label="fragment_meal_list"
-        tools:layout="@layout/fragment_meal_list" />
+        tools:layout="@layout/fragment_meal_list" >
+        <action
+            android:id="@+id/action_mealListFragment_to_customMealFragment"
+            app:destination="@id/customMealFragment" />
+        <action
+            android:id="@+id/action_mealListFragment_to_orderSummaryFragment"
+            app:destination="@id/orderSummaryFragment" />
+    </fragment>
     <fragment
         android:id="@+id/orderSummaryFragment"
         android:name="com.example.lekcja10.OrderSummaryFragment"
         android:label="fragment_order_summary"
-        tools:layout="@layout/fragment_order_summary" />
+        tools:layout="@layout/fragment_order_summary" >
+        <action
+            android:id="@+id/action_orderSummaryFragment_to_OrdersFragment"
+            app:destination="@id/OrdersFragment" />
+        <action
+            android:id="@+id/action_orderSummaryFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
+    </fragment>
 
 </navigation>
