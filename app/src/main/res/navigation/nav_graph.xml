@@ -13,7 +13,11 @@
         tools:layout="@layout/fragment_new_order" >
         <action
             android:id="@+id/action_HomeFragment_to_mealListFragment"
-            app:destination="@id/mealListFragment" />
+            app:destination="@id/mealListFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
     <fragment
         android:id="@+id/OrdersFragment"
@@ -27,10 +31,18 @@
         tools:layout="@layout/fragment_custom_meal" >
         <action
             android:id="@+id/action_customMealFragment_to_mealListFragment"
-            app:destination="@id/mealListFragment" />
+            app:destination="@id/mealListFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
         <action
             android:id="@+id/action_customMealFragment_to_orderSummaryFragment"
-            app:destination="@id/orderSummaryFragment" />
+            app:destination="@id/orderSummaryFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/mealListFragment"
@@ -39,10 +51,25 @@
         tools:layout="@layout/fragment_meal_list" >
         <action
             android:id="@+id/action_mealListFragment_to_customMealFragment"
-            app:destination="@id/customMealFragment" />
+            app:destination="@id/customMealFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
         <action
             android:id="@+id/action_mealListFragment_to_orderSummaryFragment"
-            app:destination="@id/orderSummaryFragment" />
+            app:destination="@id/orderSummaryFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_mealListFragment_self"
+            app:destination="@id/mealListFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/orderSummaryFragment"
@@ -51,10 +78,18 @@
         tools:layout="@layout/fragment_order_summary" >
         <action
             android:id="@+id/action_orderSummaryFragment_to_OrdersFragment"
-            app:destination="@id/OrdersFragment" />
+            app:destination="@id/OrdersFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
         <action
             android:id="@+id/action_orderSummaryFragment_to_HomeFragment"
-            app:destination="@id/HomeFragment" />
+            app:destination="@id/HomeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
 
 </navigation>

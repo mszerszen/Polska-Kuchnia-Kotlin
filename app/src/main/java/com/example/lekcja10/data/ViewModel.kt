@@ -32,8 +32,7 @@ class AppViewModel: ViewModel() {
         )
     }
 
-    fun setCurrentMealData(menuItem: MenuItem, type: ItemType, newStep: ItemType) {
-        _currentStep.value = newStep
+    fun setCurrentMealData(menuItem: MenuItem, type: ItemType) {
         if(type == ItemType.SOUP) {
             _currentMeal.value.soup = menuItem
         } else if (type == ItemType.MEAL) {

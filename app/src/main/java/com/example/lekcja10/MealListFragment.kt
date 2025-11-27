@@ -14,6 +14,7 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.view.marginEnd
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.NavDirections
 import com.example.lekcja10.data.AppViewModel
 import com.example.lekcja10.data.Data
 import com.example.lekcja10.data.ItemType
@@ -33,6 +34,11 @@ class MealListFragment : Fragment() {
     ): View? {
         _binding = FragmentMealListBinding.inflate(inflater, container, false)
         return binding.root
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -100,10 +106,15 @@ class MealListFragment : Fragment() {
                         })
                     })
 
+                    val current = it
+                    var action: NavDirections? = null
                     setOnClickListener {
-                        sharedViewModel.setCurrentMealData(
-
-                        )
+                        sharedViewModel.setCurrentMealData(current, current.type)
+                        when(current.type) {
+                            ItemType.SOUP -> {
+                                action = MealListFragmentDirections.actionMealListFragmentSelf()
+                            }
+                        }
                     }
                 }
 
