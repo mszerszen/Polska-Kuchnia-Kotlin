@@ -6,13 +6,20 @@ import androidx.lifecycle.ViewModel
 import kotlin.String
 
 class AppViewModel: ViewModel() {
-    private val _mealList = MutableLiveData<MutableList<Meal>>()
+    private var _mealList = MutableLiveData<MutableList<Meal>>()
     val mealList: LiveData<MutableList<Meal>> get() = _mealList
 
-    private val _currentMeal = MutableLiveData<Meal>()
+    private var _currentMeal = MutableLiveData<Meal>(
+        Meal(
+            name = "",
+            soup = null,
+            second = null,
+            drink = null
+        )
+    )
     val currentMeal: LiveData<Meal> get() = _currentMeal
 
-    private val _currentStep = MutableLiveData<ItemType>(ItemType.SOUP)
+    private var _currentStep = MutableLiveData<ItemType>(ItemType.SOUP)
     val currentStep: LiveData<ItemType> get() = _currentStep
 
     fun addMeal() {
@@ -30,6 +37,8 @@ class AppViewModel: ViewModel() {
             second = null,
             drink = null
         )
+
+        _currentStep.value = ItemType.SOUP
     }
 
     fun setCurrentMealData(menuItem: MenuItem, type: ItemType) {
@@ -40,6 +49,10 @@ class AppViewModel: ViewModel() {
         } else {
             _currentMeal.value.drink = menuItem
         }
+    }
+
+    fun setCurrentStep(step: ItemType) {
+        _currentStep.value = step
     }
 
     fun clearMeals() {

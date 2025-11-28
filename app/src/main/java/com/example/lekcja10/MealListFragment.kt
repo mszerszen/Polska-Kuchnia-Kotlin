@@ -15,6 +15,8 @@ import android.widget.TextView
 import androidx.core.view.marginEnd
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.NavDirections
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import com.example.lekcja10.data.AppViewModel
 import com.example.lekcja10.data.Data
 import com.example.lekcja10.data.ItemType
@@ -48,6 +50,17 @@ class MealListFragment : Fragment() {
             ItemType.SOUP -> "Zupę"
             ItemType.MEAL -> "Drugie Danie"
             else -> "Napój"
+        }
+
+        binding.BTNCustom.text = "Stwórz " + when(sharedViewModel.currentStep.value) {
+            ItemType.SOUP -> "Własną Zupę"
+            ItemType.MEAL -> "Własne Drugie Danie"
+            else -> "Własny Napój"
+        }
+
+        binding.BTNCustom.setOnClickListener {
+            val action = MealListFragmentDirections.actionMealListFragmentToCustomMealFragment()
+            findNavController().navigate(action)
         }
 
         Data.Data.forEach {
@@ -113,8 +126,18 @@ class MealListFragment : Fragment() {
                         when(current.type) {
                             ItemType.SOUP -> {
                                 action = MealListFragmentDirections.actionMealListFragmentSelf()
+                                sharedViewModel.setCurrentStep(ItemType.MEAL)
+                            }
+                            ItemType.MEAL -> {
+                                action = MealListFragmentDirections.actionMealListFragmentSelf()
+                                sharedViewModel.setCurrentStep(ItemType.DRINK)
+                            }
+                            else -> {
+                                action = MealListFragmentDirections.actionMealListFragmentToOrderSummaryFragment()
                             }
                         }
+
+                        findNavController().navigate(action)
                     }
                 }
 
