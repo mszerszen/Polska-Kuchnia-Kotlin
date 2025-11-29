@@ -6,7 +6,9 @@ import androidx.lifecycle.ViewModel
 import kotlin.String
 
 class AppViewModel: ViewModel() {
-    private var _mealList = MutableLiveData<MutableList<Meal>>()
+    private var _mealList = MutableLiveData<MutableList<Meal>>(
+        mutableListOf()
+    )
     val mealList: LiveData<MutableList<Meal>> get() = _mealList
 
     private var _currentMeal = MutableLiveData<Meal>(
@@ -55,7 +57,7 @@ class AppViewModel: ViewModel() {
         _currentStep.value = step
     }
 
-    fun clearMeals() {
-        _mealList.value.clear()
+    fun setCurrentMealName(name: String) {
+        _currentMeal.value.name = name
     }
 }

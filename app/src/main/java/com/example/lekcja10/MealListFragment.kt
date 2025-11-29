@@ -58,8 +58,33 @@ class MealListFragment : Fragment() {
             else -> "Własny Napój"
         }
 
+        binding.BTNNone.text = "Bez " + when(sharedViewModel.currentStep.value) {
+            ItemType.SOUP -> "Zupy"
+            ItemType.MEAL -> "Drugiego Dania"
+            else -> "Napoju"
+        }
+
         binding.BTNCustom.setOnClickListener {
             val action = MealListFragmentDirections.actionMealListFragmentToCustomMealFragment()
+            findNavController().navigate(action)
+        }
+
+        binding.BTNNone.setOnClickListener {
+            var action: NavDirections? = null
+            when(sharedViewModel.currentStep.value) {
+                ItemType.SOUP -> {
+                    action = MealListFragmentDirections.actionMealListFragmentSelf()
+                    sharedViewModel.setCurrentStep(ItemType.MEAL)
+                }
+                ItemType.MEAL -> {
+                    action = MealListFragmentDirections.actionMealListFragmentSelf()
+                    sharedViewModel.setCurrentStep(ItemType.DRINK)
+                }
+                else -> {
+                    action = MealListFragmentDirections.actionMealListFragmentToOrderSummaryFragment()
+                }
+            }
+
             findNavController().navigate(action)
         }
 

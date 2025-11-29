@@ -150,7 +150,7 @@ class Data {
                 description = "Mąka, woda, mleko, cukier. A Kornel nie umie zrobić",
                 type = ItemType.MEAL,
                 price = 19.80,
-                image = R.drawable.kopytka
+                image = R.drawable.images
             ),
             MenuItem(
                 name = "Barszcz Z Uszkami",
@@ -225,7 +225,7 @@ class Data {
             MenuItem(
                 name = "Karp W Galarecie",
                 description = "Ryba co smakuje błotem w galarecie co nie smakuje niczym",
-                type = ItemType.DRINK,
+                type = ItemType.MEAL,
                 price = 16.73,
                 image = R.drawable.kapr
             ),

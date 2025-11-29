@@ -77,13 +77,6 @@
         android:label="fragment_order_summary"
         tools:layout="@layout/fragment_order_summary" >
         <action
-            android:id="@+id/action_orderSummaryFragment_to_OrdersFragment"
-            app:destination="@id/OrdersFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
-        <action
             android:id="@+id/action_orderSummaryFragment_to_HomeFragment"
             app:destination="@id/HomeFragment"
             app:enterAnim="@anim/slide_in_right"
